@@ -361,6 +361,7 @@ article {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  row-gap: 10px;
 }
 
 .news-prev,
@@ -391,6 +392,17 @@ article {
 }
 
 @media (max-width: 768px) {
+  .news-carousel-item {
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+  }
+
+  .news-carousel-item p {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
   .news-prev,
   .news-next {
     display: none;
